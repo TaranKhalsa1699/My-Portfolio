@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taranpreet Singh - AI Python Backend Developer & CyberSecurity Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/e0ff2a67e6.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #314355;
+            color: white;
+            /* Set default text color for body */
+        }
+
+        .progress-wrapper {
+            position: relative;
+            margin-bottom: 30px;
+            /* Added margin for spacing */
+        }
+
+        hr {
+            color: white;
+            opacity: 0.25;
+            /* Adjusted opacity for subtlety */
+        }
+
+        /* Keep other custom styles as needed */
+        *,
+        ::before,
+        ::after {
+            box-sizing: border-box;
+        }
+
+        .service-item {
+            text-align: center;
+            padding: 30px;
+            background-color: #314355;
+            /* Ensure background matches body */
+            transition: transform 0.3s ease;
+            /* Added subtle hover effect */
+            height: 100%;
+            /* Make cards in a row equal height */
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+            /* Lift card slightly on hover */
+        }
+
+        .service-item i.btn-hover {
+            /* Target the icon specifically */
+            background-color: green;
+            color: white;
+            padding: 15px;
+            /* Ensure padding for visual */
+            border-radius: 50%;
+            /* Make it circular */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .service-item:hover i.btn-hover {
+            background-color: #00B87B;
+            /* Use theme color on hover */
+        }
+
+
+        .progress-percentage {
+            position: absolute;
+            top: -25px;
+            /* Adjust as needed */
+            right: 0;
+            font-weight: bold;
+            color: white;
+            /* Ensure percentage is visible */
+        }
+
+        /* Custom highlight color for links/buttons if needed */
+        .highlight-color {
+            color: #00B87B;
+        }
+
+        .btn-highlight {
+            background-color: #00B87B;
+            color: white;
+            border: none;
+        }
+
+        .btn-highlight:hover {
+            background-color: #00a068;
+            /* Darker shade on hover */
+            color: white;
+        }
+
+        /* Ensure links in sidebar buttons are white */
+        .sidebar-btn-link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar-btn-link:hover {
+            color: #eeeeee;
+            /* Slightly lighter on hover */
+        }
+
+        /* Style portfolio filter buttons */
+        #portfolio-flters .btn {
+            margin: 0 5px 10px 5px;
+        }
+
+        /* Style form inputs */
+        .form-control,
+        .form-select {
+            background-color: rgba(255, 255, 255, 0.1);
+            /* Slightly transparent white */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .form-control::placeholder {
+            /* Standard placeholder */
+            color: rgba(255, 255, 255, 0.7);
+            opacity: 1;
+        }
+
+        .form-control:-ms-input-placeholder {
+            /* IE */
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-control::-ms-input-placeholder {
+            /* Edge */
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-color: #00B87B;
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(0, 184, 123, 0.25);
+            /* Focus shadow */
+        }
+
+        .form-floating>label {
+            color: rgba(255, 255, 255, 0.7);
+            /* Style floating labels */
+        }
+
+        .form-control:-webkit-autofill,
+        .form-control:-webkit-autofill:hover,
+        .form-control:-webkit-autofill:focus,
+        .form-control:-webkit-autofill:active {
+            -webkit-text-fill-color: white;
+            /* Ensure autofill text is white */
+            -webkit-box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.1) inset !important;
+            /* Keep background consistent */
+            transition: background-color 5000s ease-in-out 0s;
+            /* Prevent yellow background */
+        }
+
+        /* Footer link styling */
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #00B87B;
+        }
+
+        .footer-links .border-end {
+            border-color: rgba(255, 255, 255, 0.3) !important;
+        }
+
+        /* Stubborn White Box appears when inputting any text in background of 
+        hovered name of type like eg: 'First Name' */
+        .form-floating .form-control {
+            background-color: #34495e;
+            color: #fff;
+            border: 1px solid #555;
+            padding: 0.8rem;
+        }
+
+        .form-floating>label,
+        .form-floating>.form-control:focus~label,
+        .form-floating>.form-control:not(:placeholder-shown)~label {
+            background: none !important;
+            background-color: transparent !important;
+            color: #fff !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+            padding: 0 0.1rem !important;
+            border: none !important;
+        }
+
+        .form-floating>label::after,
+        .form-floating>label::before {
+            background: none !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+            border: none !important;
+            content: "";
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-3 col-md-4 shadow-lg sticky-lg-top vh-100 p-0" style="background-color:#314355;">
+                <div class="text-center p-4">
+                    <img src="/images/profile1.jpeg" class="img-fluid rounded-circle mb-3"
+                        alt="Taranpreet Singh Profile Picture" style="max-width: 150px; border: 3px solid #00B87B;">
+
+                    <h5 class="card-title text-center fw-bold highlight-color">Taranpreet Singh</h5>
+
+                    <p class="text-white fw-normal text-center pb-3">
+                        AI Python Backend Developer & Cybersecurity Enthusiast
+                    </p>
+
+                    <div class="d-flex justify-content-center mb-4">
+
+                        <a href="https://www.facebook.com/" target="_blank"
+                            class="btn btn-outline-light btn-square mx-2" aria-label="Facebook Profile">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/tarankhalsa1699" target="_blank"
+                            class="btn btn-outline-light btn-square mx-2" aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="https://web.whatsapp.com/" target="_blank"
+                            class="btn btn-outline-light btn-square mx-2" aria-label="WhatsApp Contact">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://github.com/TaranKhalsa1699" target="_blank"
+                            class="btn btn-outline-light btn-square mx-2" aria-label="GitHub Profile">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="position-absolute bottom-0 w-100">
+                    <div class="d-flex flex-column align-items-center justify-content-center border-top pt-4 pb-4"
+                        style="border-color: rgba(255, 255, 255, 0.2) !important;">
+
+                        <a href="YOUR_CV_LINK_HERE.pdf" target="_blank"
+                            class="btn btn-highlight mb-2 w-75 sidebar-btn-link">
+                            Download CV
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary w-75 sidebar-btn-link">
+                            Contact Me
+                        </a>
+
+                    </div>
+                </div>
+            </aside>
+
+
+            <main class="col-lg-9 col-md-8 p-4 p-lg-5" style="overflow-y: auto; height: 100vh;">
+                <section id="about" class="mb-5">
+                    <h2 class="fw-bold text-white mb-3">About Me</h2>
+                    <hr class="mb-4">
+
+                    <p class="fw-normal text-white mb-4">
+                        Python backend developer with hands-on experience building and deploying REST APIs using Django,
+                        Django REST
+                        Framework, and FastAPI. I’ve worked on authentication systems, database-driven applications, and
+                        scalable
+                        backend architectures.
+                        <br><br>
+                        Currently developing an ML-powered password strength classifier trained on 50k+ leaked
+                        passwords, achieving
+                        better accuracy than traditional regex-based validation. I enjoy combining backend engineering
+                        with practical
+                        machine learning and cybersecurity concepts.
+                        <br><br>
+                        I’m focused, consistent, and always learning. I love working on real-world projects, writing
+                        clean code,
+                        documenting systems properly, and building solutions that actually solve problems.
+                    </p>
+
+                    <div class="row mb-4">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><strong class="highlight-color">Name: </strong>Taranpreet Singh</li>
+                                <li class="mb-2"><strong class="highlight-color">Degree: </strong>Bachelor of Computer
+                                    Science (AI & Data Science)</li>
+                                <li class="mb-2"><strong class="highlight-color">Phone: </strong>+91 91156 17740</li>
+                                <li class="mb-2"><strong class="highlight-color">Address: </strong>Punjab, India</li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><strong class="highlight-color">Birthday: </strong>12 Nov 2002</li>
+                                <li class="mb-2"><strong class="highlight-color">Experience: </strong>5 months +
+                                    Projects</li>
+                                <li class="mb-2"><strong class="highlight-color">Email:
+                                    </strong>singhpunjabkaur1699@gmail.com</li>
+                                <li class="mb-2"><strong class="highlight-color">Freelance: </strong>Available</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <div class="shadow-lg d-flex p-4 align-items-center"
+                                style="background-color: rgba(255, 255, 255, 0.05);">
+                                <h1 class="flex-shrink-0 display-5 mb-0 highlight-color me-3">5</h1>
+                                <div>
+                                    <p class="mb-0 text-white-50">Months of</p>
+                                    <h5 class="mb-0 text-white">Experience</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <div class="shadow-lg d-flex p-4 align-items-center"
+                                style="background-color: rgba(255, 255, 255, 0.05);">
+                                <h1 class="flex-shrink-0 display-5 mb-0 highlight-color me-3">50+</h1>
+                                <div>
+                                    <p class="mb-0 text-white-50">Happy</p>
+                                    <h5 class="mb-0 text-white">Clients</h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <div class="shadow-lg d-flex p-4 align-items-center"
+                                style="background-color: rgba(255, 255, 255, 0.05);">
+                                <h1 class="flex-shrink-0 display-5 mb-0 highlight-color me-3">5+</h1>
+                                <div>
+                                    <p class="mb-0 text-white-50">Completed</p>
+                                    <h5 class="mb-0 text-white">Projects</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section id="skills" class="py-5">
+                    <h3 class="fw-bold text-white mb-3">Skills</h3>
+                    <hr class="mb-5">
+                    <div class="row">
+
+                        <!-- LEFT COLUMN -->
+                        <div class="col-md-6">
+
+                            <h5 class="text-white">Python</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 90%; background-color: #7a74e6;"></div>
+                                </div>
+                                <div class="progress-percentage">90%</div>
+                            </div>
+
+                            <h5 class="text-white">Django / DRF</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 85%; background-color: #3a20ab;"></div>
+                                </div>
+                                <div class="progress-percentage">85%</div>
+                            </div>
+
+                            <h5 class="text-white">FastAPI</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 80%; background-color: #e11919;"></div>
+                                </div>
+                                <div class="progress-percentage">80%</div>
+                            </div>
+
+                            <h5 class="text-white">REST APIs / JWT / OAuth2</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 85%; background-color: #00B87B;"></div>
+                                </div>
+                                <div class="progress-percentage">85%</div>
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT COLUMN -->
+                        <div class="col-md-6">
+
+                            <h5 class="text-white">PostgreSQL / MySQL</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 80%; background-color: #9f077e;"></div>
+                                </div>
+                                <div class="progress-percentage">80%</div>
+                            </div>
+
+                            <h5 class="text-white">Machine Learning (Scikit-Learn)</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 75%; background-color: #aa1308;"></div>
+                                </div>
+                                <div class="progress-percentage">75%</div>
+                            </div>
+
+                            <h5 class="text-white">Pandas / NumPy</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 85%; background-color: #3a20ab;"></div>
+                                </div>
+                                <div class="progress-percentage">85%</div>
+                            </div>
+
+                            <h5 class="text-white">Git / Docker / Linux</h5>
+                            <div class="progress-wrapper">
+                                <div class="progress" style="height: 10px;">
+                                    <div class="progress-bar" style="width: 80%; background-color: #00B87B;"></div>
+                                </div>
+                                <div class="progress-percentage">80%</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+                <hr>
+
+                <section id="experience" class="py-5">
+                    <h3 class="text-white mb-3">Experience</h3>
+                    <hr class="mb-5">
+                    <div class="border-start border-2 border-light pt-2 ps-5"
+                        style="border-color: rgba(255, 255, 255, 0.3) !important;">
+
+                        <!-- Internship Experience -->
+                        <div class="position-relative mb-4">
+                            <span class="fa-solid fa-briefcase fs-4 text-light position-absolute"
+                                style="top: 5px; left: -60px; color: #00B87B !important;"></span>
+
+                            <h5 class="mb-1 text-white">Python Developer Intern</h5>
+                            <p class="mb-2 text-white-50">Webpaint Technology Pvt Ltd |
+                                <small>Mar 2025 – Jul 2025</small>
+                            </p>
+
+                            <p class="text-white">
+                                • Developed 12+ REST APIs using Django, DRF, and FastAPI<br>
+                                • Implemented JWT authentication, validation, and secure hashing techniques<br>
+                                • Optimized SQL queries improving API performance by 15–30%<br>
+                                • Designed and deployed backend modules for live client projects<br>
+                                • Worked with PostgreSQL and MySQL for scalable database integration<br>
+                                • Collaborated in weekly sprints, writing clear documentation and unit tests
+                            </p>
+                        </div>
+
+                        <!-- Project Work (Optional Professional Experience Block) -->
+                        <div class="position-relative mb-4">
+                            <span class="fa-solid fa-briefcase fs-4 text-light position-absolute"
+                                style="top: 5px; left: -60px; color: #00B87B !important;"></span>
+
+                            <h5 class="mb-1 text-white">Backend / ML Projects Developer</h5>
+                            <p class="mb-2 text-white-50">Freelance & Self-Driven Projects |
+                                <small>2024 – Present</small>
+                            </p>
+
+                            <p class="text-white">
+                                • Built an ML-enhanced Password Security API improving accuracy by 20%<br>
+                                • Created a Secure Blog Backend using Django REST Framework with JWT<br>
+                                • Developed a real-time Password Strength Checker using Streamlit<br>
+                                • Integrated PostgreSQL, MySQL, and MongoDB in various projects<br>
+                                • Worked on automation, Linux-based deployments, Docker, and CI/CD workflows
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+                <hr>
+
+                <section id="services" class="py-5">
+                    <h1 class="text-white mb-3">Services</h1>
+                    <hr class="mb-5">
+                    <div class="row g-4">
+
+                        <!-- API Development -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-lg service-item p-4">
+                                <i class="fa fa-2x fa-server mx-auto mb-4 btn-hover"></i>
+                                <h5 class="mb-2 text-white">REST API Development</h5>
+                                <p class="mb-0 text-white-50">
+                                    Building secure, scalable APIs using Django REST Framework and FastAPI with JWT
+                                    authentication and
+                                    role-based access control.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Backend Development -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-lg service-item p-4">
+                                <i class="fa fa-2x fa-code mx-auto mb-4 btn-hover"></i>
+                                <h5 class="mb-2 text-white">Backend Development</h5>
+                                <p class="mb-0 text-white-50">
+                                    Designing and developing backend systems, database models, authentication flows, and
+                                    business logic
+                                    for production-ready applications.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Machine Learning Models -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-lg service-item p-4">
+                                <i class="fa fa-2x fa-robot mx-auto mb-4 btn-hover"></i>
+                                <h5 class="mb-2 text-white">Machine Learning Solutions</h5>
+                                <p class="mb-0 text-white-50">
+                                    Creating ML-powered tools using Scikit-Learn, such as password strength prediction
+                                    models,
+                                    classification systems, and automation solutions.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Database / DevOps / Deployment -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-lg service-item p-4">
+                                <i class="fa fa-2x fa-database mx-auto mb-4 btn-hover"></i>
+                                <h5 class="mb-2 text-white">Database & Deployment</h5>
+                                <p class="mb-0 text-white-50">
+                                    Designing and managing PostgreSQL/MySQL databases, containerizing apps with Docker,
+                                    and deploying
+                                    projects on cloud platforms with CI/CD workflows.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <hr>
+
+                <section id="portfolio" class="py-5">
+                    <h1 class="text-white mb-3">Portfolio</h1>
+                    <hr class="mb-5">
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center mb-4">
+                                <ul class="list-inline" id="portfolio-flters">
+                                    <li class="btn btn-secondary active aria-label" data-filter="*">
+                                        <i class="fa fa-star me-2"></i>All
+                                    </li>
+                                    <li class="btn btn-secondary aria-label" data-filter=".design">
+                                        <i class="fa fa-laptop-code me-2"></i>Design
+                                    </li>
+                                    <li class="btn btn-secondary aria-label" data-filter=".development">
+                                        <i class="fa fa-mobile-alt me-2"></i>Development
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="row portfolio-container g-4">
+
+                                <!-- ML Password API -->
+                                <div class="col-md-6 portfolio-item development">
+                                    <div class="position-relative overflow-hidden shadow-lg">
+                                        <img class="img-fluid w-100" src="images/project-ml.png"
+                                            alt="ML Password Security API">
+                                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                            <a href="images/project-ml.png" data-lightbox="portfolio"
+                                                class="btn btn-light btn-sm aria-label m-1"
+                                                title="ML Password Security API">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <a href="https://github.com/TaranKhalsa1699/Ml-Password-Security-Api"
+                                                target="_blank" class="btn btn-light btn-sm aria-label m-1"
+                                                title="https://github.com/TaranKhalsa1699/Ml-Password-Security-Api.git">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-white mt-2">ML-Enhanced Password Security API</h5>
+                                </div>
+
+                                <!-- Blog Backend API -->
+                                <div class="col-md-6 portfolio-item development">
+                                    <div class="position-relative overflow-hidden shadow-lg">
+                                        <img class="img-fluid w-100" src="images/project-blog.jpg"
+                                            alt="DRF Blog Backend">
+                                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                            <a href="images/project-blog.jpg" data-lightbox="portfolio"
+                                                class="btn btn-light btn-sm aria-label m-1" title="Blog API">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <a href="https://github.com/TaranKhalsa1699/Blog-App-Django-Rest-Framework"
+                                                target="_blank" class="btn btn-light btn-sm aria-label m-1"
+                                                title="GitHub Link">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-white mt-2">Secure Blog Platform Backend (DRF)</h5>
+                                </div>
+
+                                <!-- Streamlit Password Checker -->
+                                <div class="col-md-6 portfolio-item design">
+                                    <div class="position-relative overflow-hidden shadow-lg">
+                                        <img class="img-fluid w-100" src="images/project-streamlit.jpg"
+                                            alt="Password Strength Checker">
+                                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                            <a href="images/project-streamlit.jpg" data-lightbox="portfolio"
+                                                class="btn btn-light btn-sm aria-label m-1"
+                                                title="Streamlit Password Tool">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <a href="https://passwordstrengthcheckertool-dsoxtor2dsuaywrjbxtk5v.streamlit.app/"
+                                                target="_blank" class="btn btn-light btn-sm aria-label m-1"
+                                                title="Live Demo">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-white mt-2">Password Strength Checker (Streamlit)</h5>
+                                </div>
+
+                                <!-- JARVIS-X Assistant -->
+                                <div class="col-md-6 portfolio-item development">
+                                    <div class="position-relative overflow-hidden shadow-lg">
+                                        <img class="img-fluid w-100" src="images/project-jarvis.jpg"
+                                            alt="JARVIS AI Desktop Assistant">
+                                        <div class="portfolio-overlay d-flex align-items-center justify-content-center">
+                                            <a href="images/project-jarvis.jpg" data-lightbox="portfolio"
+                                                class="btn btn-light btn-sm aria-label m-1" title="JARVIS AI Assistant">
+                                                <i class="fa fa-eye"></i>
+                                            </a>
+                                            <a href="https://github.com/TaranKhalsa1699/JARVIS-X-AI-Desktop-Assistant"
+                                                target="_blank" class="btn btn-light btn-sm aria-label m-1"
+                                                title="GitHub Link">
+                                                <i class="fa fa-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <h5 class="text-white mt-2">JARVIS-X AI Desktop Assistant</h5>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section id="testimonials" class="py-5">
+                    <h1 class="text-white mb-3">Recommendations</h1>
+                    <hr class="mb-5">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <div class="p-4 mb-3 rounded shadow d-flex align-items-center"
+                                style="background-color: rgba(255,255,255,0.05);">
+
+                                <img src="images/peer1.jpg" alt="Peer Feedback" class="rounded-circle me-3"
+                                    style="width:60px; height:60px; object-fit:cover;">
+
+                                <div>
+                                    <p class="mb-2">
+                                        "Taranpreet is very strong in Python and backend development.
+                                        We collaborated on multiple API projects, and he always delivered clean,
+                                        well-structured code with clear documentation."
+                                    </p>
+                                    <h6 class="mb-0">– Gurpreet Singh, Fellow Developer</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="p-4 mb-3 rounded shadow d-flex align-items-center"
+                                style="background-color: rgba(255,255,255,0.05);">
+
+                                <img src="images/peer2.jpg" alt="Project Feedback" class="rounded-circle me-3"
+                                    style="width:60px; height:60px; object-fit:cover;">
+
+                                <div>
+                                    <p class="mb-2">
+                                        "His work on machine learning and API optimization is impressive.
+                                        The password security API he built is one of the best I’ve seen from a fresh
+                                        developer."
+                                    </p>
+                                    <h6 class="mb-0">– Manpreet Kaur, Project Collaborator</h6>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+                <hr>
+
+                <section id="subscribe" class="py-5">
+                    <div class="p-4 p-md-5 shadow-lg text-center" style="background-color: rgba(0, 0, 0, 0.2);">
+
+                        <h2 class="text-white fs-1 mb-3"><strong>Let’s Connect</strong></h2>
+                        <p class="text-white-50 fs-6 fw-semibold mb-4">
+                            I’m always open to opportunities, collaborations, backend projects, and tech discussions.
+                            Reach out anytime.
+                        </p>
+
+                        <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+                            <a href="https://www.linkedin.com/in/tarankhalsa1699" target="_blank"
+                                class="btn btn-highlight btn-lg px-4 py-2">
+                                Connect on LinkedIn
+                            </a>
+
+                            <a href="https://github.com/TaranKhalsa1699" target="_blank"
+                                class="btn btn-outline-light btn-lg px-4 py-2">
+                                View GitHub Projects
+                            </a>
+
+                            <a href="#contact" class="btn btn-secondary btn-lg px-4 py-2">
+                                Hire Me
+                            </a>
+
+                        </div>
+                    </div>
+                </section>
+                <hr>
+
+                <section id="contact" class="py-5">
+                    <h3 class="text-white mb-3">Contact Me</h3>
+                    <hr class="mb-4">
+
+                    <form class="row g-3" action="#" method="POST">
+
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="fullName" name="fullName"
+                                    placeholder="Full Name" required>
+                                <label for="fullName">Full Name</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" name="email"
+                                    placeholder="Your Email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="subject" name="subject"
+                                    placeholder="Subject" required>
+                                <label for="subject">Subject</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" placeholder="Write your message here" id="message"
+                                    name="message" style="height: 150px" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 text-center">
+                            <button class="btn btn-highlight btn-lg w-50 py-3" type="submit">Send Message</button>
+                        </div>
+
+                    </form>
+                </section>
+                <hr>
+
+                <footer class="pt-5 mt-5 text-center text-white-50 footer-links">
+                    <hr class="mb-4">
+
+                    <div class="d-flex justify-content-center mb-4">
+                        <a class="btn btn-outline-light btn-square mx-1" href="https://x.com/" target="_blank"
+                            aria-label="Twitter Profile">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-square mx-1" href="https://www.facebook.com/"
+                            target="_blank" aria-label="Facebook Profile">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-square mx-1"
+                            href="https://www.linkedin.com/in/tarankhalsa1699" target="_blank"
+                            aria-label="LinkedIn Profile">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+
+                        <a class="btn btn-outline-light btn-square mx-1" href="https://www.instagram.com/"
+                            target="_blank" aria-label="Instagram Profile">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+
+                    <div class="d-flex justify-content-center mb-3">
+                        <a class="px-3 border-end" href="#" target="_blank">Privacy Policy</a>
+                        <a class="px-3 border-end" href="#" target="_blank">Terms of Use</a>
+                        <a class="px-3" href="#contact" target="_blank">Help</a>
+                    </div>
+
+                    <p class="m-0 pb-4">
+                        © <span id="current-year"></span> Taranpreet Singh. All Rights Reserved.
+                    </p>
+                </footer>
+
+</body>
+
+</html>
